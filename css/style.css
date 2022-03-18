@@ -7,3 +7,31 @@
   width: 150px;
   height: 100px;
 }
+
+.home {
+  background-color: black;
+  height: 500px;
+  opacity: 0.9px;
+}
+.home p {
+  color: white;
+  margin-left: 200px;
+  font-family: "Proxima Nova", verdana, "Avenir Next";
+  padding: 0px;
+}
+.home p:first-child {
+  padding-top: 100px;
+  font-size: 24px;
+}
+.home p:nth-child(2) {
+  padding: 0px;
+  font-size: 28px;
+  color: darkorange;
+}
+.home p:nth-child(3) {
+  font-size: 40px;
+}
+.home p:nth-child(4) {
+  font-size: 12px;
+  color: darkorange;
+}
