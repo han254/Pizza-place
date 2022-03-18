@@ -62,4 +62,10 @@ button {
   height: 500px;
   width: 100%;
 }
-
+.about {
+    align-items: center;
+    font-size: 18px;
+    font-family: poppin;
+    align-items: center;
+    padding-top: 50px;
+}
