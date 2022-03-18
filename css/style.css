@@ -57,3 +57,9 @@ button {
   float: right;
   margin-left: 300px;
 }
+.About-us {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
