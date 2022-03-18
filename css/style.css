@@ -3,4 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+.logo {
+  width: 150px;
+  height: 100px;
+}
