@@ -35,3 +35,15 @@
   font-size: 12px;
   color: darkorange;
 }
+
+button {
+  background-color: darkorange;
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 200px;
+}
+.pizz {
+  color: darkorange;
+  font-style: italic;
+  font-weight: bold;
+}
