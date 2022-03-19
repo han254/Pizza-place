@@ -144,3 +144,12 @@ h3 {
   background-color: orange;
   opacity: 0.9;
 }
+.proceed{
+  border: 1px solid black;
+  color: black;
+  background: greenyellow;
+  border-radius: 5px;
+}
+.proceed:hover{
+background-color: yellow;
+}
