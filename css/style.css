@@ -170,3 +170,11 @@ background-color: green;
 #checkout:hover{
   background-color: green;
 }
+#final-order{
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 5px;
+}
+#final-order:hover{
+  background-color: darkgreen;
+}
