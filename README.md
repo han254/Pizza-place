@@ -1,7 +1,5 @@
 # PIZZERIA
 
-#### This is a project showing the landing page of a studio Last edited 20/03/2022.
-
 #### By **Peter Njenga**
 
 ## Description
@@ -20,6 +18,10 @@ A web application for a pizza place where customers can make their orders and ch
 * open your IDE (code . or atom .) 
 
 ## Dependecies
+* Husky
+* Link-staged
+* Webpack
+* React
 
 ## Technologies Used
 * Git
@@ -32,8 +34,8 @@ A web application for a pizza place where customers can make their orders and ch
 
 ## Support and contact details
 
-*You can contact me through my email[peternjenga1706@gmail.com]
-*Github [https://github.com/han254]
+* You can contact me through my email[peternjenga1706@gmail.com]
+* Github [https://github.com/han254]
 
 ##### Link to my github-pages
 ()
