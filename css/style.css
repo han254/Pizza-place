@@ -92,3 +92,12 @@ button {
   font-family: "Roboto";
   margin-top: 40px;
 }
+#contactus {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  background-image: url("../images/bg4.webp");
+  background-size: cover;
+}
