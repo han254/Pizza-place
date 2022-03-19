@@ -17,7 +17,7 @@ $(function () {
       ptopping.push($(this).val());
     });
     console.log(ptopping.join(", "));
-    
+
 switch (psize) {
       case "0":
         price = 0;
@@ -35,4 +35,20 @@ switch (psize) {
         console.log(price);
       default:
         console.log("error");
+    }
+    switch (pcrust) {
+      case "0":
+        crust_price = 0;
+        break;
+      case "Thin Crust":
+        crust_price = 300;
+        break;
+      case "Brooklyn Style ":
+        crust_price = 200;
+        break;
+      case "Pan & Hand Tossed":
+        crust_price = 250;
+        break;
+      default:
+        console.log("No price");
     }
