@@ -101,3 +101,16 @@ button {
   background-image: url("../images/bg4.webp");
   background-size: cover;
 }
+
+#contactus img {
+  object-fit: cover;
+  height: auto;
+}
+#contactus .btn {
+  background: transparent;
+  color: black;
+  border: solid 1px black;
+  font-weight: bold;
+  padding: 5px;
+  background-color: darkorange;
+}
