@@ -52,3 +52,23 @@ switch (psize) {
       default:
         console.log("No price");
     }
+
+    let topping_value = ptopping.length * 100;
+    console.log("toppins value" + topping_value);
+
+    if (psize == "0" && pcrust == "0") {
+      console.log("nothing selected");
+      $("button.proceed").show();
+      $("Order-process").show();
+      $("div.choise").hide();
+      alert("Please select pizza size and crust");
+    } else {
+      $("button.proceed").hide();
+      $("Order-process").hide();
+      $("div.choise").slideDown(500);
+    }
+
+    total = price + crust_price + topping_value;
+    console.log(total);
+    let checkoutTotal = 0;
+    checkoutTotal = checkoutTotal + total;
