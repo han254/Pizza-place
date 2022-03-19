@@ -69,3 +69,10 @@ button {
     align-items: center;
     padding-top: 50px;
 }
+.title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Roboto";
+  margin-top: 40px;
+}
