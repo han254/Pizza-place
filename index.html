@@ -54,8 +54,8 @@
         <p>Today's Best Deal</p>
         <p>Order the best pizza in town at <span class="pizz">PIZZERIA</span> SHOP</p>
         <button>ORDER NOW!</button>
-           <div class="arrow bounce"> <a href="#variety"> <img src="./images/arrow.ico" alt=" arrow" width="40px"></a>
-           </div>
+        <div class="arrow bounce"> <a href="#variety"> <img src="./images/arrow.ico" alt=" arrow" width="40px"></a>
+        </div>
         <img src="./images/home.jpg" alt="home-image" class="home-image">
     </div>
     <div class="About-us">
@@ -75,7 +75,7 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image4" class="test4" src="./images/pizza6.webp" alt="">
+                <img id="image4" class="test4" src="./images/pizza6.webp" alt="cheese">
                 <div class="col" id="column4">
                     <p class="para">Cheese pizza</p>
                 </div>
@@ -83,25 +83,25 @@
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image3" class="test4" src="./images/pizza-crust.jpg" alt="">
+                <img id="image3" class="test4" src="./images/pizza-crust.jpg" alt="Chicken Hawaiian.">
                 <div class="col" id="column3">
-                    <p class="para">Hawaiian</p>
+                    <p class="para">Chicken Hawaiian.</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image2" class="test4" src="./images/pizza2.jpg" alt="">
+                <img id="image2" class="test4" src="./images/pizza2.jpg" alt="Veg Feast.">
                 <div class="col" id="column2">
-                    <p class="para">Veggie</p>
+                    <p class="para">Veg Feast.</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image1" class="test4" src="./images/pizza3.webp" alt="">
+                <img id="image1" class="test4" src="./images/pizza3.webp" alt="Chicken Pepperoni">
                 <div class="col" id="column1">
-                    <p class="para">Meat spice</p>
+                    <p class="para">Chicken Pepperoni</p>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image5" class="test4" src="./images/pizza4.jpg" alt="">
+                <img id="image5" class="test4" src="./images/pizza4.jpg" alt="Margherita">
                 <div class="col" id="column5">
                     <p class="para">Margherita</p>
                 </div>
@@ -118,58 +118,86 @@
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image6" class="test4" src="./images/crust2.webp" alt="">
+                <img id="image6" class="test4" src="./images/crust2.webp" alt="Meat Deluxe.">
                 <div class="col" id="column6">
-                    <p class="para">Pepperoni</p>
+                    <p class="para">Meat Deluxe</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image7" class="test4" src="./images/pop.jpg" alt="">
+                <img id="image7" class="test4" src="./images/pop.jpg" alt="Beef Pepperoni">
                 <div class="col" id="column7">
-                    <p class="para">Chicken </p>
+                    <p class="para">Beef Pepperoni </p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card" id="card1">
-                <img id="image8" class="test4" src="./images/crust.webp" alt="">
+                <img id="image8" class="test4" src="./images/crust.webp" alt="works">
                 <div class="col" id="column8">
-                    <p class="para">The works pizza</p>
+                    <p class="para">Buffalo Pizza.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contactus">
-        <h3><b>CONTACT US</b></h3>
-        <div class="row">
-            <div class="col-md-4">
-                <p>Juja,Juja Square, 2nd Floor, Nairobi Kenya</p>
-                <h5>Call us:</h5>
-                <p>+254 796621656</p>
-                <h5>Email:</h5>
-                <p>pizzeria2022@gmail.com</p>
-                <h5>Opening Hours:</h5>
-                <p>Monday-Saturday: 11am-11pm</p>
-                <p>Sunday: 1:30pm-8:00pm</p>
-                <h4>Closed:</h4>
-                <p>Public Holidays</p>
+    <div class="container-fluid order" id="make-order">
+        <div class="order-overlay">
+            <div class="controls-top text-center" id="Order-now">
+                <h2>Order</h2>
             </div>
-            <div class="col-md-8">
-                <form id="messageForm">
-                    <div class="form-group textarea">
-                        <textarea type="text" name="message" id="mess" class="form-control" rows="8"
-                            placeholder="Your message here..." required></textarea>
-                        <button type="submit" class="btn">SEND</button>
-                    </div>
-                </form>
-                <div class="rights">
-                    <p>© 2022 Pizzeria Restaurant. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <form action="">
+                        <label for="select">Select the flavor</label>
+                        <select class="browser-default custom-select custom-select-md mb-3 name">
+                            <option value="#">Pick your preffered flavor</option>
+                            <option value="Cheese pizza">Cheese pizza</option>
+                            <option value="Chicken Hawaiian.">Chicken Hawaiian.</option>
+                            <option value="Veg Feast.">Veg Feast.</option>
+                            <option value="Chicken Pepperoni">Chicken Pepperoni</option>
+                            <option value="Margherita">Margherita</option>
+                            <option value="Meat Deluxe">Meat Deluxe</option>
+                            <option value="Beef Pepperoni">Beef Pepperoni</option>
+                            <option value="Buffalo Pizza">Buffalo Pizza </option>
+                        </select><br> <br>
+                        <label for="select">size Selection</label>
+                        <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                            <option selected value="#">Pick your preffered size</option>
+                            <option value="large">Large @sh.1000</option>
+                            <option value="medium">Medium @sh.800</option>
+                            <option value="small">Small @sh.500</option>
+                        </select><br><br>
+
+                        <div id="contactus">
+                            <h3><b>CONTACT US</b></h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p>Juja,Juja Square, 2nd Floor, Nairobi Kenya</p>
+                                    <h5>Call us:</h5>
+                                    <p>+254 796621656</p>
+                                    <h5>Email:</h5>
+                                    <p>pizzeria2022@gmail.com</p>
+                                    <h5>Opening Hours:</h5>
+                                    <p>Monday-Saturday: 11am-11pm</p>
+                                    <p>Sunday: 1:30pm-8:00pm</p>
+                                    <h4>Closed:</h4>
+                                    <p>Public Holidays</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <form id="messageForm">
+                                        <div class="form-group textarea">
+                                            <textarea type="text" name="message" id="mess" class="form-control" rows="8"
+                                                placeholder="Your message here..." required></textarea>
+                                            <button type="submit" class="btn">SEND</button>
+                                        </div>
+                                    </form>
+                                    <div class="rights">
+                                        <p>© 2022 Pizzeria Restaurant. All rights reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 </body>
 
