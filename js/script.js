@@ -7,6 +7,7 @@ function Getpizza(name, size, crust, topping, total) {
   this.topping = topping;
   this.total = total;
 }
+
 $(function () {
   $("button.proceed").click(function (event) {
     let pname = $(".name option:selected").val();
@@ -18,7 +19,7 @@ $(function () {
     });
     console.log(ptopping.join(", "));
 
-switch (psize) {
+    switch (psize) {
       case "0":
         price = 0;
         break;
@@ -52,7 +53,6 @@ switch (psize) {
       default:
         console.log("No price");
     }
-
     let topping_value = ptopping.length * 100;
     console.log("toppins value" + topping_value);
 
@@ -78,7 +78,8 @@ switch (psize) {
     $("#pizzacrust").html($("#crust option:selected").val());
     $("#pizzatopping").html(ptopping.join(", "));
     $("#totals").html(total);
-     $("button.addPizza").click(function () {
+
+    $("button.addPizza").click(function () {
       let pname = $(".name option:selected").val();
       let psize = $("#size option:selected").val();
       let pcrust = $("#crust option:selected").val();
@@ -87,7 +88,50 @@ switch (psize) {
         ptopping.push($(this).val());
       });
       console.log(ptopping.join(", "));
-       var newOrder = new Getpizza(pname, psize, pcrust, ptopping, total);
+      switch (psize) {
+        case "0":
+          price = 0;
+          break;
+        case "large":
+          price = 1000;
+          console.log(price);
+          break;
+        case "medium":
+          price = 800;
+          console.log("The price is " + price);
+          break;
+        case "small":
+          price = 500;
+          console.log(price);
+        default:
+          console.log("error");
+      }
+      switch (pcrust) {
+        case "0":
+          crust_price = 0;
+          break;
+        case "Thin Crust":
+          crust_price = 300;
+          break;
+        case "Stuffed":
+          crust_price = 200;
+          break;
+        case "Pan & Hand Tossed":
+          crust_price = 250;
+          break;
+        default:
+          console.log("No price");
+      }
+      let topping_value = ptopping.length * 100;
+      console.log("toppins value" + topping_value);
+      total = price + crust_price + topping_value;
+      console.log(total);
+
+      checkoutTotal = checkoutTotal + total;
+      console.log(checkoutTotal);
+      // The use of js constructor
+      var newOrder = new Getpizza(pname, psize, pcrust, ptopping, total);
+
       $("#ordersmade").append(
         '<tr><td id="pizzaname">' +
           newOrder.name +
@@ -112,7 +156,7 @@ switch (psize) {
       console.log("Your total bills is sh. " + checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
     });
-
+    ``;
     $("button.deliver").click(function () {
       $(".pizzatable").hide();
       $(".choise h2").hide();
@@ -126,7 +170,8 @@ switch (psize) {
         "Your bill plus delivery fee is: " + deliveryamount
       );
     });
-     $("button#final-order").click(function (event) {
+
+    $("button#final-order").click(function (event) {
       event.preventDefault();
 
       $("#pizzatotal").hide();
@@ -137,3 +182,27 @@ switch (psize) {
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
+
+      if (
+        $("input#name").val() &&
+        $("input#phone").val() &&
+        $("input#location").val() != ""
+      ) {
+        $("#finallmessage").append(
+          person +
+            ", We have recieved your order and it will be delivered to you at " +
+            location +
+            ". Prepare sh. " +
+            deliveryamount
+        );
+        $("#totalbill").hide();
+        $("#finallmessage").slideDown(1200);
+      } else {
+        alert("Please fill in the details for delivery!");
+        $(".delivery").show();
+        $("button#final-order").show();
+      }
+    });
+    event.preventDefault();
+  });
+});
