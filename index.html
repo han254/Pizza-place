@@ -168,36 +168,62 @@
                             <option value="medium">Medium @sh.800</option>
                             <option value="small">Small @sh.500</option>
                         </select><br><br>
-
-                        <div id="contactus">
-                            <h3><b>CONTACT US</b></h3>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>Juja,Juja Square, 2nd Floor, Nairobi Kenya</p>
-                                    <h5>Call us:</h5>
-                                    <p>+254 796621656</p>
-                                    <h5>Email:</h5>
-                                    <p>pizzeria2022@gmail.com</p>
-                                    <h5>Opening Hours:</h5>
-                                    <p>Monday-Saturday: 11am-11pm</p>
-                                    <p>Sunday: 1:30pm-8:00pm</p>
-                                    <h4>Closed:</h4>
-                                    <p>Public Holidays</p>
+                        <label for="crust">Choose your favorite Crust!</label>
+                        <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                            <option selected value="0">Select your preferred crust!</option>
+                            <option value="Thin Crust">Thin Crust @sh.300</option>
+                            <option value="Brooklyn Style @">Brooklyn Style @sh.200</option>
+                            <option value="Pan & Hand Tossed @">Pan & Hand Tossed @sh.250</option>
+                        </select><br> <br>
+                        <label for="Toppings">Select Your preferred Toppings at only sh.100 each</label><br>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Extra Cheese" value="Extra Cheese"
+                                name="toppings">
+                            <label class="custom-control-label" for="Extra Cheese">Extra Cheese</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Pepperoni" value="Pepperoni"
+                                name="toppings">
+                            <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Chicken" value="Chicken"
+                                name="toppings">
+                            <label class="custom-control-label" for="Chicken">Chicken</label>
+                        </div>
+                        <br><br>
+                        <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                    </form>
+                </div>
+                <div id="contactus">
+                    <h3><b>CONTACT US</b></h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>Juja,Juja Square, 2nd Floor, Nairobi Kenya</p>
+                            <h5>Call us:</h5>
+                            <p>+254 796621656</p>
+                            <h5>Email:</h5>
+                            <p>pizzeria2022@gmail.com</p>
+                            <h5>Opening Hours:</h5>
+                            <p>Monday-Saturday: 11am-11pm</p>
+                            <p>Sunday: 1:30pm-8:00pm</p>
+                            <h4>Closed:</h4>
+                            <p>Public Holidays</p>
+                        </div>
+                        <div class="col-md-8">
+                            <form id="messageForm">
+                                <div class="form-group textarea">
+                                    <textarea type="text" name="message" id="mess" class="form-control" rows="8"
+                                        placeholder="Your message here..." required></textarea>
+                                    <button type="submit" class="btn">SEND</button>
                                 </div>
-                                <div class="col-md-8">
-                                    <form id="messageForm">
-                                        <div class="form-group textarea">
-                                            <textarea type="text" name="message" id="mess" class="form-control" rows="8"
-                                                placeholder="Your message here..." required></textarea>
-                                            <button type="submit" class="btn">SEND</button>
-                                        </div>
-                                    </form>
-                                    <div class="rights">
-                                        <p>© 2022 Pizzeria Restaurant. All rights reserved.</p>
-                                    </div>
-                                </div>
+                            </form>
+                            <div class="rights">
+                                <p>© 2022 Pizzeria Restaurant. All rights reserved.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
 
 </body>
 
