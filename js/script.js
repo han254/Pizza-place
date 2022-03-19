@@ -126,3 +126,14 @@ switch (psize) {
         "Your bill plus delivery fee is: " + deliveryamount
       );
     });
+     $("button#final-order").click(function (event) {
+      event.preventDefault();
+
+      $("#pizzatotal").hide();
+      $(".delivery").hide();
+      $("button#final-order").hide();
+      let deliveryamount = checkoutTotal + 200;
+      console.log("Final Bill is: " + deliveryamount);
+      let person = $("input#name").val();
+      let phone = $("input#phone").val();
+      let location = $("input#location").val();
