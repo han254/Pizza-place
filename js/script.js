@@ -17,3 +17,22 @@ $(function () {
       ptopping.push($(this).val());
     });
     console.log(ptopping.join(", "));
+    
+switch (psize) {
+      case "0":
+        price = 0;
+        break;
+      case "large":
+        price = 1000;
+        console.log(price);
+        break;
+      case "medium":
+        price = 800;
+        console.log("The price is " + price);
+        break;
+      case "small":
+        price = 500;
+        console.log(price);
+      default:
+        console.log("error");
+    }
