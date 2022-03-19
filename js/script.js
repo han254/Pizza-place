@@ -112,3 +112,17 @@ switch (psize) {
       console.log("Your total bills is sh. " + checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
     });
+
+    $("button.deliver").click(function () {
+      $(".pizzatable").hide();
+      $(".choise h2").hide();
+      $(".delivery").slideDown(1000);
+      $("#addedprice").hide();
+      $("button.deliver").hide();
+      $("#pizzatotal").hide();
+      let deliveryamount = checkoutTotal + 200;
+      console.log("You will pay sh. " + deliveryamount + " on delivery");
+      $("#totalbill").append(
+        "Your bill plus delivery fee is: " + deliveryamount
+      );
+    });
