@@ -178,3 +178,7 @@ background-color: green;
 #final-order:hover{
   background-color: darkgreen;
 }
+
+@media screen and (max-width: 1400px) and (min-width: 320px){
+
+}
