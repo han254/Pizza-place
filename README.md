@@ -38,7 +38,7 @@ A web application for a pizza place where customers can make their orders and ch
 * Github [https://github.com/han254]
 
 ##### Link to my github-pages
-()
+(https://han254.github.io/Pizza-place/)
 ### License
 
 Copyright (c) 2022 [click here to view license](LICENSE)
