@@ -1,3 +1,4 @@
+//Business logic
 var price, crust_price, topping_price;
 let total = 0;
 function Getpizza(name, size, crust, topping, total) {
@@ -7,7 +8,7 @@ function Getpizza(name, size, crust, topping, total) {
   this.topping = topping;
   this.total = total;
 }
-
+//User logic interface
 $(function () {
   $("button.proceed").click(function (event) {
     let pname = $(".name option:selected").val();
